@@ -1,0 +1,117 @@
+:root {
+    --main-color: #757575;
+    --secondary-color: #212121;
+    --third-color: #2196F3; 
+
+}
+
+ul { 
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Roboto , sans-serif ;
+    color: var(--main-color);
+    background-color: #F5F5F5;
+    letter-spacing: 0.03em;
+}
+
+/*  Header + Footer  */
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.nav-link {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact {
+    color: var(--main-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact:hover,
+.contact:focus {
+    color: var(--third-color);
+}
+
+
+/* Hero */
+
+.service-button {
+    color: #FFFFFF;
+    background-color: var(--third-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+}
+
+.hero-title {
+    color: #FFFFFF;
+    background-color: #2F303A;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+
+/* Advantages  */
+
+.section-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+}
+
+.advantage-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.18;
+        text-transform: uppercase;
+}
+
+.advantage-text {
+        font-size: 14px;
+        line-height: 1.71;
+}
+
+/* Team  */
+
+.member-name {
+    color: var(--secondary-color);
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 1.71;
+}
+
+.member-role {
+        font-size: 16px;
+        line-height: 1.18;
+}
