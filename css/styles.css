@@ -2,31 +2,38 @@
     --main-color: #757575;
     --secondary-color: #212121;
     --third-color: #2196F3; 
+    --fourth-color: #F5F5F5;
 
 }
 
-ul { 
+/* Global  */
+
+.list { 
     list-style-type: none;
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
 body {
     font-family: Roboto , sans-serif ;
     color: var(--main-color);
-    background-color: #F5F5F5;
+    background-color: var(--fourth-color);
     letter-spacing: 0.03em;
 }
 
 /*  Header + Footer  */
 
 .logo {
+    color: #000000;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+}
+.logo-web {
+    color: var(--third-color);
 }
 
 .nav-link {
@@ -50,15 +57,23 @@ body {
 .nav-link:hover,
 .nav-link:focus,
 .contact:hover,
-.contact:focus {
+.contact:focus,
+.adress:hover,
+.adress:focus {
     color: var(--third-color);
+}
+
+.adress {
+    color: var(--fourth-color);
+    background-color: #2F303A;   /* Тимчасовий фон */
+
 }
 
 
 /* Hero */
 
 .service-button {
-    color: #FFFFFF;
+    color: var(--fourth-color);
     background-color: var(--third-color);
     font-weight: 700;
     font-size: 16px;
@@ -67,7 +82,7 @@ body {
 }
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--fourth-color);
     background-color: #2F303A;
     font-weight: 900;
     font-size: 44px;
@@ -114,4 +129,42 @@ body {
 .member-role {
         font-size: 16px;
         line-height: 1.18;
+}
+
+
+
+
+
+/* Portfolio  */
+
+/* Filter buttons*/
+
+.filter-button {
+    color: var(--secondary-color);
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        background-color: #F5F4FA;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    color: #FFFFFF;
+    background-color: var(--third-color);
+}
+
+
+
+/* Project list */
+
+.project-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+}
+
+.project-type {
+    font-size: 16px;
+    line-height: 1.88;
 }
