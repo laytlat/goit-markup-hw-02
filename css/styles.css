@@ -3,7 +3,11 @@
     --secondary-color: #212121;
     --third-color: #2196F3; 
     --fourth-color: #F5F5F5;
-
+    --fifth-color: #000000; 
+    --sixth-color: #FFFFFF;
+    --seventh-color: #2F303A ;
+    --eighth-color: #F5F4FA ;
+    --ninth-color: #188CE8 ;
 }
 
 /* Global  */
@@ -19,14 +23,20 @@
 body {
     font-family: Roboto , sans-serif ;
     color: var(--main-color);
-    background-color: var(--fourth-color);
+   /* background-color: var(--fourth-color);*/
     letter-spacing: 0.03em;
+}
+
+.service-button,
+.filter-button {
+    cursor: pointer;
+    font-family: inherit;
 }
 
 /*  Header + Footer  */
 
 .logo {
-    color: #000000;
+    color: var(--fifth-color);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -44,9 +54,12 @@ body {
     letter-spacing: 0.02em;
 }
 
+.current {
+    color: var(--third-color);
+}
+
 .contact {
     color: var(--main-color);
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -63,14 +76,29 @@ body {
     color: var(--third-color);
 }
 
+.footer {
+    background-color: var(--seventh-color);
+}
+
 .adress {
-    color: var(--fourth-color);
-    background-color: #2F303A;   /* Тимчасовий фон */
+    color: var(--sixth-color);
+    font-style: normal;
 
 }
 
+.logo-studio {
+    color: var(--sixth-color);
+}
+
+/*________________________________________________________________*/
+
+/*  Main page */
 
 /* Hero */
+
+.hero {
+    background-color: var(--seventh-color);
+}
 
 .service-button {
     color: var(--fourth-color);
@@ -79,11 +107,16 @@ body {
     font-size: 16px;
     line-height: 1.87;
     text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.service-button:focus,
+.service-button:hover {
+    background-color: var(--ninth-color);
 }
 
 .hero-title {
     color: var(--fourth-color);
-    background-color: #2F303A;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -94,6 +127,8 @@ body {
 }
 
 /* Advantages  */
+
+
 
 .section-title {
     color: var(--secondary-color);
@@ -119,6 +154,10 @@ body {
 
 /* Team  */
 
+.team-section {
+    background-color: var(--eighth-color);
+}
+
 .member-name {
     color: var(--secondary-color);
     font-weight: 500;
@@ -132,7 +171,7 @@ body {
 }
 
 
-
+/*_________________________________________________________________*/
 
 
 /* Portfolio  */
@@ -144,12 +183,12 @@ body {
     font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
-        background-color: #F5F4FA;
+        background-color: var(--eighth-color);
 }
 
 .filter-button:hover,
 .filter-button:focus {
-    color: #FFFFFF;
+    color: var(--sixth-color);
     background-color: var(--third-color);
 }
 
@@ -162,9 +201,14 @@ body {
     font-weight: 700;
         font-size: 18px;
         line-height: 2;
+        letter-spacing: 0.06em;
 }
 
 .project-type {
     font-size: 16px;
     line-height: 1.88;
 }
+
+
+
+/*__________________________________________________________*/
